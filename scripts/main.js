@@ -8,7 +8,7 @@ let expelledStudents = []
 // HTML for the starting card
 const startHtml = () => {
     return `
-    <div class="card text-center" id="start">
+    <div class="card text-center" id="start" style="background-color: black;">
       <div class="card-body">
         <h5 class="card-text" style="margin-bottom: 20px;">Please click the button below to start sorting!</h5>
         <button type="button" class="btn btn-primary" id="start-btn">Start!</button>
@@ -19,7 +19,7 @@ const startHtml = () => {
 // HTML for the student form
 const studentFormHtml = () => {
   return `
-  <div class="card-body">
+  <div class="card-body" style="background-color: black;">
     <h5 class="card-text">Enter the student's full name on the line below.</h5>
     <div class="form-group">
       <input type="text" class="form-control" id="inputName" placeholder="Full Name" style="text-align: center;">
@@ -32,7 +32,7 @@ const studentFormHtml = () => {
 // HTML for the cards to be displayed in the "Good Students" section
 const goodStudentCard = (object) => {
   return `
-  <div class="card text-center border-dark" id="student">
+  <div class="card text-center border-dark" id="student" style="color: black;">
     <h5 class="card-title">${object.name}</h5>
     <div>
       <img src="${object.crest}" width="100" height="100">
@@ -45,7 +45,7 @@ const goodStudentCard = (object) => {
 // HTML for the cards to be displayed in the "Not So Good Students" section
 const badStudentCard = (object) => {
   return `
-  <div class="card text-center border-dark" id="student">
+  <div class="card text-center border-dark" id="student" style="color: black; width: 144.22px;">
     <h5 class="card-title">${object.name}</h5>
     <img src="https://contentful.harrypotter.com/usf1vwtuqyxm/63QOGEALJGJmp1LPXTp8hC/9c3a1ef99d14a11acc11aa2f6bacd095/fact-file-hero-dark-mark-illustration-2.jpg?q=75&fm=jpg&w=600&h=416&fit=pad" width="100%" height="100">
     <p class="card-text" style="background-color: black; color: white; margin: 0px;">Voldemort's Army</p>
@@ -100,9 +100,8 @@ const renderedExpelledStudents = (array) => {
 
 // Re-renders the "Good Students" section with the students whose house matches the selected house filter criteria 
 const filterHouse = (event) => {
-  if (allStudents == []) {
-    document.querySelector('#filterWarning').innerHTML = `<p style="color: red">Please enter at least one student before filtering.</p>`
-    console.log("Filter Warning Hit")
+  if (allStudents.length == 0) {
+    document.querySelector('#formWarning').innerHTML = `<p style="color: red" class="warning-text">Please enter at least one student before filtering.</p>`
   } else {
     if(event.target.id === "Gryffindor") {
       const gryf = allStudents.filter(student => student.house === "Gryffindor")
@@ -128,7 +127,7 @@ const createStudent = (event) => {
   
   if(event.target.id === "submit-btn") {
     if (document.querySelector('#inputName').value == '') {
-      document.querySelector('#formWarning').innerHTML = `<p style="color: red">Please enter a name</p>`
+      document.querySelector('#formWarning').innerHTML = `<p style="color: red" class="warning-text">Please enter a name</p>`
     } else {
       const houseValues = randomHouse()
       const studName = document.querySelector('#inputName').value
