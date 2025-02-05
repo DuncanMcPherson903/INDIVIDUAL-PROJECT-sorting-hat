@@ -12,7 +12,7 @@
   <div class="container">
 
     <!-- Sorting hat introduction -->
-    <div class="introduction text-center">
+    <div class="introduction text-center" style="border-radius: 10px;">
       <h1>Hello! I am the Sorting Hat.</h1>
       <h5>Welcome to the Wizarding World of Whatever. Just pick a school and get the hell out.</h5>
     </div>
@@ -21,33 +21,35 @@
     <!-- <div class="card text-center" id="start"></div> -->
     
     <!-- Student entry form -->
-    <div class="card text-center border-dark" id="student-form" style="margin: 10px"></div>   
+    <div class="student-entry card text-center border-dark" id="student-form" style="margin: 10px;"></div>   
 
     <!-- Filter Stuff -->
-    <div id="filterWarning"></div>
-    <div class="d-flex flex-column text-center" style="width: 100%; margin: 10px">
-      <div class="d-flex flex-row justify-content-center" id="filter" style="width: 100%;">
-        <button type="button" id="all" class="btn btn-secondary" style="width: 100%">All</button>
-        <button type="button" id="Gryffindor" class="btn btn-danger" style="width: 100%">Peter Griffin</button>
-        <button type="button" id="HufflePuff" class="btn btn-warning" style="width: 100%">H.R. Pufnstuf</button>
-        <button type="button" id="Ravenclaw" class="btn btn-primary" style="width: 100%">The Bird One</button>
-        <button type="button" id="Slytherin" class="btn btn-success" style="width: 100%">Hisssssssss</button>
+    <div class="card" style="width: 100%; margin: 10px; background-color: black;">
+      <div class="d-flex flex-column text-center" style= "margin: 10px">
+        <div class="d-flex flex-row justify-content-center" id="filter" style="width: 100%;">
+          <button type="button" id="all" class="btn btn-secondary border-dark" style="width: 100%">All</button>
+          <button type="button" id="Gryffindor" class="btn btn-danger border-dark" style="width: 100%">Peter Griffin</button>
+          <button type="button" id="HufflePuff" class="btn btn-warning border-dark" style="width: 100%">H.R. Pufnstuf</button>
+          <button type="button" id="Ravenclaw" class="btn btn-primary border-dark" style="width: 100%">The Bird One</button>
+          <button type="button" id="Slytherin" class="btn btn-success border-dark" style="width: 100%">Hisssssssss</button>
+        </div>
       </div>
     </div>
+    
     
     <!-- Student block -->
     <div class ="student-block d-flex flex-row align-items-start" id="students" style="width: 100%">
 
       <!-- Good students -->
        
-      <div class="card d-flex flex-column flex-start text-center border-dark" style="width: 100%">
+      <div class="card d-flex flex-column flex-start text-center border-dark" style="width: 100%; background-color: black; color: white;">
         <h5>Good Students</h5>
         <div class="d-flex flex-row flex-wrap justify-content-center" id="good-students"></div>
       </div>
 
       <!-- Bad students -->
 
-      <div class="card d-flex flex-column text-center border-dark" style="width: 100%">
+      <div class="card d-flex flex-column text-center border-dark" style="width: 100%; background-color: black; color: white;">
         <h5>Not So Good Students</h5>
         <div class="d-flex flex-row flex-wrap justify-content-center" id="expelled-students"></div>
       </div>
