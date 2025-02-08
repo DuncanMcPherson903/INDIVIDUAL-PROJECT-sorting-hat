@@ -5,23 +5,23 @@ The goal of this project is to create a simulation of the "Sorting Hat" from the
 
 ## Who is this for?
 The user of this application should exhibit the following characteristics:
--Enjoyment of Harry Potter related topics.
--A general sense of whimsy.
--Desire to create silly names for silly people.
--Desire to banish said silly people to the dark side.
--Must be British (or do the accent).
+- Enjoyment of Harry Potter related topics.
+- A general sense of whimsy.
+- Desire to create silly names for silly people.
+- Desire to banish said silly people to the dark side.
+- Must be British (or do the accent).
 
 ## Features
--Near limitless name generation.
--Totally random house placement.
--Precise and intuitive house filtering.
--Exemplary style.
+- Near limitless name generation.
+- Totally random house placement.
+- Precise and intuitive house filtering.
+- Exemplary style.
 
 ## Contributors
 [Duncan McPherson](https://github.com/DuncanMcPherson903)
 
 ## Screenshots
-<img width="786" alt="" src="../img/Sorting_hat_landing.png">
+![Screenshot](../img/Sorting_hat_landing.png)
  
 
 ## Helpful Links
