@@ -21,7 +21,8 @@ The user of this application should exhibit the following characteristics:
 [Duncan McPherson](https://github.com/DuncanMcPherson903)
 
 ## Screenshots
-![Screenshot](../img/Sorting_hat_landing.png)
+![Sorting_hat_landing](https://github.com/user-attachments/assets/61219394-7e20-451d-ad73-47dffe2d226c)
+
  
 
 ## Helpful Links
