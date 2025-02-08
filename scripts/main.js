@@ -32,7 +32,7 @@ const studentFormHtml = () => {
 // HTML for the cards to be displayed in the "Good Students" section
 const goodStudentCard = (object) => {
   return `
-  <div class="card text-center border-dark" id="student" style="color: black;">
+  <div class="card text-center border-dark" id="student" style="color: black; border-radius: 10px;">
     <h5 class="card-title">${object.name}</h5>
     <div>
       <img src="${object.crest}" width="100" height="100">
@@ -45,7 +45,7 @@ const goodStudentCard = (object) => {
 // HTML for the cards to be displayed in the "Not So Good Students" section
 const badStudentCard = (object) => {
   return `
-  <div class="card text-center border-dark" id="student" style="color: black; width: 144.22px;">
+  <div class="card text-center border-dark" id="student" style="color: black; width: 144.22px; border-radius: 10px">
     <h5 class="card-title">${object.name}</h5>
     <img src="https://contentful.harrypotter.com/usf1vwtuqyxm/63QOGEALJGJmp1LPXTp8hC/9c3a1ef99d14a11acc11aa2f6bacd095/fact-file-hero-dark-mark-illustration-2.jpg?q=75&fm=jpg&w=600&h=416&fit=pad" width="100%" height="100">
     <p class="card-text" style="background-color: black; color: white; margin: 0px;">Voldemort's Army</p>

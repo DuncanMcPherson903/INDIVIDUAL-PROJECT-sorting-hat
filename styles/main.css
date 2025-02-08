@@ -1,9 +1,11 @@
+html {
+  cursor: url('../img/wand.png'), crosshair;
+}
 
 body {
   background-image: url(https://i.pinimg.com/736x/a7/c0/fa/a7c0fa0d460ce47bee5d6df61597443b.jpg);
   background-color: rgba(255, 255, 255, 0.596);
   background-blend-mode: lighten;
-  cursor: url('../img/wand.png'), crosshair;
   font-family: "Trirong", serif;
 } 
 
@@ -62,8 +64,6 @@ p {
 }
 
 .warning-text {
-
   color: #333;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
-
 }
